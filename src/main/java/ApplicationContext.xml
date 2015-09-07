@@ -13,7 +13,7 @@
 	<bean id="custom" class="com.hand.dao.CustomerDao">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
-	<bean id="logging" class="com.hand.log.Logging"></bean>
+	
 
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">

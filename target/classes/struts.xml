@@ -8,8 +8,12 @@
 	<constant name="struts.devMode" value="true" />
 	<package name="International" extends="struts-default">
 		<action name="login" class="com.hand.action.LoginAction">
-			<result name="success">/index.jsp</result>
+			<result name="success" type="chain">check</result>
 			<result name="input">/login.jsp</result>
+		</action>
+		<action name="check" class="com.hand.action.LoginAction">
+			<result name="success" type="dispatcher">/index.jsp</result>
+			<result name="error">/error.jsp</result>
 		</action>
 	</package>
 

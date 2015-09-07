@@ -162,7 +162,7 @@
 			<artifactId>xwork-core</artifactId>
 			<version>2.3.16.1</version>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>3.2.9.RELEASE</version>
@@ -185,5 +185,14 @@
 	</dependencies>
 	<build>
 		<finalName>Test1020StructsExam</finalName>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.3-SNAPSHOT</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 	</build>
 </project>
