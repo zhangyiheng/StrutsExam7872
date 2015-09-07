@@ -1,0 +1,2 @@
+1、mvn tomcat:run
+2、http://localhost:8080/Test1020StructsExam/login.jsp
